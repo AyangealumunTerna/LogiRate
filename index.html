@@ -1,37 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogiRate</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-       <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid" id="nav">
                 <div id="logo-container">
-                    <img src="./Images/Screenshot 2025-06-04 114528.png" alt="">
+                    <a href="/index.html">
+                        <img src="./Images/Screenshot 2025-06-04 114528.png" alt="">
+                    </a>
                     <!-- <a class="navbar-brand" href="#">LogiRate</a> -->
                 </div>
-                
+
                 <div class="d-flex ">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="border: none; ">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <button onclick="toggleMenu()" class="cancel">&times;</button>
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                                <a class="nav-link" href="#">About Us</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                                <a class="nav-link" href="#">Contact Us</a>
                             </li>
                         </ul>
                         <!-- <form class="d-flex">
@@ -40,16 +42,21 @@
                         </form> -->
                     </div>
                     <div>
-                        <a href="" class="btn"> LOGIN</a>
+                        <a href="./login.html" class="btn"> LOGIN</a>
                     </div>
+                    <button onclick="toggleMenu()" class="navbar-toggler" aria-label="Toggle navigation"
+                        style="border: none; ">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
             </div>
         </nav>
-        
+
     </header>
-    
+
     <section>
-        <div id="tablet">
+        
+        <div class="material-bg" id="tablet">
             <div id="tablet-content">
                 <p id="h1">
                     <span>Compare</span> & Choose the <span>Best</span> Transport Tickets that suites <span>You</span>
@@ -58,7 +65,7 @@
                     <span>Nigeria's #1 platform</span> for comparing verified logistics providers.
                 </p>
                 <br>
-                <a href="" class="btn ">Get Started</a><br>
+                <a href="/get-started.html" class="btn">Get Started</a><br>
                 <div id="socials-container">
                     <a href="">
                         <img src="./Images/Screenshot 2025-06-05 000724.png" alt="" id="socials">
@@ -66,7 +73,7 @@
                     <a href="">
                         <img src="./Images/Screenshot 2025-06-05 000743.png" alt="" id="socials">
                     </a>
-                 </div>
+                </div>
             </div>
             <div id="tablet-image">
                 <img src="./Images/Dasboard (1).png" alt="">
@@ -75,33 +82,153 @@
         <div id="partners">
             <img src="./Images/peace-mass-transit-seeklogo.png" alt="" id="peace-mass">
             <img src="./Images/GUO Logo.png" alt="" id="guo-logo">
-            <img src="./Images/GIG Logo.png" alt="" id="gigm-logo">
+            <img src="./Images/GIGM 1.png" alt="" id="gigm-logo">
             <img src="./Images/Chisco Logo.jpg" alt="" id="chisco-logo">
+            <img src="./Images/ABC Logo (1) 1.png" alt="" id="abc-logo">
+            <img src="./Images/AkTc (1) 1.png" alt="" id="young-logo">
         </div>
         <div id="why-choose-us">
             <p id="why">Why <span id="choose">Choose</span> Us</p>
 
             <div id="cards-container">
                 <div class="card">
-                    <img src="./Images/Select-amico.png" alt="" >
+                    <img src="./Images/Select-amico.png" alt="">
                     <p id="cards-h1">Compare Top Logistics Vendors</p>
-                    <p id="cards-p">Easily compare pricing, delivery times, services offered, and user reviews across trusted logistics providers in Nigeria.</p>
+                    <p id="cards-p">Easily compare pricing, delivery times, services offered, and user reviews across
+                        trusted logistics providers in Nigeria.</p>
                 </div>
                 <div class="card">
                     <img src="./Images/Verified-amico.png" alt="">
                     <p id="cards-h1">Verified & Reliable Partners</p>
-                    <p id="cards-p">We only list <span>Vestted logistics companies-</span>ensuring you get quality service, always.</p>
+                    <p id="cards-p">We only list <span>Vestted logistics companies-</span>ensuring you get quality
+                        service, always.</p>
                 </div>
                 <div class="card">
-                    <img src="./Images/Wallet-bro.png" alt="" >
+                    <img src="./Images/Wallet-bro.png" alt="">
                     <p id="cards-h1">Save Money, Every Time</p>
-                    <p id="cards-p">Get competitive rates. Avoid hidden charges. <span>Choose the best value</span> without the guesswork.</p>
+                    <p id="cards-p">Get competitive rates. Avoid hidden charges. <span>Choose the best value</span>
+                        without the guesswork.</p>
                 </div>
             </div>
+        </div>
+    </section>
+    <main class="how-it-works" class="body">
+        <h1 class="how-it-works-h1">How Does <span>LogiRate</span> Work</h1>
+
+        <div class="features">
+            <div class="card2">
+                <img src="images/search.png" class="card-image" alt="" width="50px">
+                <h3>Tell Us What You Need</h3>
+                <P>Enter Your <span>Location</span> and <span>Destination</span> and hit "Search"</P>
+            </div>
+
+            <div class="card2">
+                <img src="images/price-comparison.png" class="card-image" alt="" width="50px">
+                <h3>Compare Your Options</h3>
+                <p>Instantly see prices and service details from multiple Logistics vendor</p>
+            </div>
+
+            <div class="card2">
+                <img src="images/hand.png" class="card-image" width="50px">
+                <h3>Pick Your Choice</h3>
+                <p>Choose your preferred logistics vendor and check for more Information</p>
+            </div>
+        </div>
+    </main>
+
+
+
+    <section>
+
+        <div class="testimonials-section">
+
+            <h2 class="testimonial-h2">Trusted by Thousands of <br>Users Across Nigeria</h2>
+
+
+            <div class="testimonials">
+                <div class="testimonial-grid">
+                    <img src="images/Jennifer Driver’s Headshots.jpg" class="profile" alt="">
+                    <div class="testimonial-content">
+                        <div class="name">Ibrahim M.,<span>SME Owner</span></div>
+                        <!-- <div class="role"> SME Owner</div> -->
+
+                        <div class="text">"This platform saved us over 500,000 in logistics costs within the first
+                            month.
+                            The transparency is
+                            unmatched."
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="testimonial-grid">
+
+                    <img src="images/75 Popular And Fresh Black Men Haircuts To Try In 2024.jpg" class="profile" alt="" >
+                    <div class="testimonial-content">
+                        <div class="name">Ibrahim M.,<span>SME Owner</span></div>
+                        <!-- <div class="role">,SME Owner</div> -->
+
+                        <div class="text">"This platform saved us over 500,000 in logistics costs within the first
+                            month.
+                            The transparency is
+                            unmatched."
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="testimonial-grid">
+
+                    <img src="images/How to prepare for my Acting Headshot Session — Headshot Photographer in Los Angeles.jpg" class="profile" alt="">
+                    <div class="testimonial-content">
+                        <div class="name">Ibrahim M.,<span>SME Owner</span></div>
+                        <!-- <div class="role">,SME Owner</div> -->
+
+                        <div class="text">"This platform saved us over 500,000 in logistics costs within the first
+                            month.
+                            The transparency is
+                            unmatched."
+                        </div>
+                    </div>
+
+                </div>
+                <div class="testimonial-grid">
+
+                    <img src="images/It’s my moment🤎 Thank you @garvin_mungai for….jpg" class="profile" alt="">
+                    <div class="testimonial-content">
+                        <div class="name">Ibrahim M.,<span>SME Owner</span></div>
+                        <!-- <div class="role">,SME Owner</div> -->
+
+                        <div class="text">"This platform saved us over 500,000 in logistics costs within the first
+                            month.
+                            The transparency is
+                            unmatched."
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
         </div>
     </section>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function toggleMenu() {
+            console.log("Toggle menu clicked");
+            const nav = document.getElementById('navbarTogglerDemo02');
+            nav.classList.toggle('open-mobile');
+            nav.classList.toggle('collapse');
+            nav.classList.toggle('navbar-collapse');
+        }
+    </script>
 </body>
