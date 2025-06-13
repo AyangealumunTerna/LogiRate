@@ -605,7 +605,6 @@ a {
   }
   #partners {
     gap: 1rem;
-    padding: 10px;
     padding: 10px 20px;
     border-radius: 5px;
     margin: 0 auto;
@@ -614,10 +613,10 @@ a {
     position: relative; 
   }
   #peace-mass {
-    height: 40px;
+    height: 35px;
   }
   #guo-logo, #gigm-logo{
-    height: 70px;
+    height: 65px;
   }
   #chisco-logo, #abc-logo, #young-logo{
       display: none;
