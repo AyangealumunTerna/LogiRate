@@ -261,7 +261,6 @@ label{
 #h1 {
   font-size: var(--Font-size5);
   font-weight: bolder;
-  line-height: var(--Line-height6);
   margin-top: 2rem;
   /* width: 80%; */
 }
@@ -355,7 +354,6 @@ a {
 #why {
   font-size: var(--Font-size7);
   font-weight: bolder;
-  line-height: var(--Line-height6);
   margin-top: 14rem;
 }
 #cards-container {
@@ -642,12 +640,6 @@ span {
   #tablet {
     padding: 20px 80px;
   }
-  #h1 {
-    font-size: var(--Font-size12);
-    font-weight: bolder;
-    line-height: var(--Line-height5);
-    /* width: 80%; */
-  }
   #tablet-image img {
     margin: 5rem 0 0 0;
     width: 300px;
@@ -697,9 +689,6 @@ span {
     margin-top: -102px;
   }
   #why {
-    font-size: var(--Font-size12);
-    font-weight: bolder;
-    line-height: var(--Line-height5);
     margin-top: 11rem;
   }
   #cards-container {
