@@ -38,7 +38,7 @@
   --Font-size4: 14px;
   --Font-size5: 40px;
   --Font-size6: 35px;
-  --Font-size7: 50px;
+  --Font-size7: 36px;
   --Font-size8: 30px;
   --Font-size10: 22px;
   --Font-size11: 70px;
@@ -50,6 +50,9 @@
   --Line-height4: 19.6px;
   --Line-height5: 45px;
   --Line-height6: 65px;
+}
+body{
+  font-family: var(--Family2);
 }
 .material-bg{
   background-image: url(./Images/Group\ 3.png);
@@ -89,6 +92,12 @@ header {
   font-weight: 700;
   margin-left: 1rem;
   background-color: var(--primary);
+}
+.d-flex .btn:hover {
+  background-color: var(--primary2);
+  color: var(--white);
+  transition-duration: 0.3s;
+  transform: scale(1.05);
 }
 
 .navbar-toggler:hover {
@@ -154,9 +163,10 @@ section {
 .container .logo{
   display: block;
   margin: 2rem auto;
+  width: 200px;
+  height: 90px;
 }
 .welcome{
-  font-size: var(--Font-size1);
   font-weight: 700;
   margin-top: 2rem;
 }
@@ -210,6 +220,7 @@ label{
   background-color: var(--primary2);
   color: var(--white);
   transition-duration: 0.3s;
+  transform: scale(1.05);
 }
 .sign-in {
   text-align: center;
@@ -231,7 +242,12 @@ label{
   background-color: transparent;
   border: #e0dbdb solid 2px;
 }
-
+.google:hover {
+  background-color: var(--Gray-5);
+  color: var(--Black-1);
+  transition-duration: 0.3s;
+  transform: scale(1.05);
+}
 .google-icon{
   width: 20px;
   height: 20px;
@@ -243,7 +259,7 @@ label{
   padding: 1.25rem 12.5rem;
 }
 #h1 {
-  font-size: var(--Font-size7);
+  font-size: var(--Font-size5);
   font-weight: bolder;
   line-height: var(--Line-height6);
   margin-top: 2rem;
@@ -270,7 +286,7 @@ label{
 }
 #tablet-content .btn {
   border-radius: 10px;
-  padding: 10px 40px;
+  padding: 10px 60px;
   color: var(--white);
   font-size: var(--Font-size1);
   font-weight: 700;
@@ -281,6 +297,7 @@ label{
   background-color: var(--primary2);
   /* border: none; */
   transition-duration: 0.3s;
+  transform: scale(1.05);
 }
 a {
   text-decoration: none;
@@ -291,10 +308,16 @@ a {
   gap: 10px;
   justify-content: left;
 }
+
+/* Style the button images */
 #socials {
-  width: 220px;
-  height: 70px;
+  width: 150px;
+  height: 50px;
   object-fit: fill;
+  border-radius: 5px;
+}
+#socials:hover {
+  transform: scale(1.05);
 }
 #partners {
   background-color: var(--white);
@@ -361,6 +384,7 @@ a {
   line-height: var(--Line-height2);
   text-align: center;
   margin-bottom: 1rem;
+  color: var(--Black-1);
 }
 #cards-p {
   font-size: var(--Font-size2);
@@ -372,6 +396,217 @@ a {
 #cards-p span {
   color: var(--Black-1);
   font-size: 700;
+}
+.how-it-works {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    padding: 40px 20px 20px;
+    font-size: 2.5em;
+}
+h1 span {
+    color: #00bfff;
+}
+.features {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.card2 {
+    background-color: #2b2b2b;
+    border-radius: .5rem;
+    padding: 1.7rem;
+    width: 90%;
+    text-align: center;
+}
+.card-image {
+    margin-bottom: .5rem;
+}
+.card h3 {
+    padding-bottom: .5rem;
+}
+.card p {
+    color: #ccc;
+}
+p span {
+    color: #00bfff;
+}
+.testimonials-section {
+    background-color: #00bfff;
+    padding: 2.5rem 2rem;
+}
+h2 {
+    align-items: center;
+    color: #fff;
+    padding-bottom: 2rem;
+
+}
+.testimonials {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    margin: 0 -1.3rem;
+}
+
+.testimonial-grid {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    gap: 1.5rem;
+    width: 60%;
+    height: 170px;
+    border-radius: .7rem;
+    padding: 1rem;
+    border: 1px solid lightblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.profile {
+    width: 70px;
+    border: 1px solid white;
+    height: 70px;;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.name {
+    font-weight: bold;
+    color: #fff;
+}
+
+span {
+    font-style: italic;
+}
+
+.text {
+    padding-top: .5rem;
+    font-size: 1rem;
+    color: #ffffff;
+    font-size: small;
+}
+.testimonial-h2, .how-it-works-h1 {
+    text-align: center;
+    color: var(--white);
+    padding-bottom: 2rem;
+    font-size: var(--Font-size7);
+    font-weight: bold;
+}
+.testimonial-h2{
+  text-align: center;
+}
+/* Top section (heading, text, buttons) */
+.top-section {
+  background: linear-gradient(to right, #7f5af0, #6246ea);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  /* position: relative;
+  overflow: hidden; */
+}
+/* Make the heading bold and large */
+.top-section h1 {
+  font-size: var(--Font-size7);
+  margin-bottom: 15px;
+}
+
+/* The paragraph under the heading */
+.top-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Container holding both buttons */
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+/* Bottom section container */
+.bottom-section {
+  background-color: #f2f2f2;
+  padding: 50px 20px;
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 40px; */
+    width: 80%;
+}
+
+/* Footer logo and name */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  
+}
+
+.footer-logo img {
+  width: 170px;
+  height: auto;
+  /* vertical-align: middle; */
+  
+}
+
+.footer-logo h2 {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 24px;
+  color: #333;
+}
+.footer-links p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.footer-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-links ul li {
+  margin-bottom: 8px;
+  
+}
+.footer-links ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 15px;
+}
+.footer-links ul li a:hover {
+  color: #000;
+}
+.footer-social a i{
+  font-size: 24px;
+  color: #555;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 5px;
+}
+.footer-social img {
+  width: 107px;
+  height: auto;
+}
+.footer-social img:hover {
+  transform: scale(1.2);
 }
 
 @media (min-width: 640px) and (max-width: 1024px) {
@@ -422,25 +657,17 @@ a {
     font-size: var(--Font-size4);
     font-weight: 600;
     line-height: var(--Line-height2);
-    /* width: 80%; */
     margin-bottom: 0 !important;
   }
   #tablet-content {
     text-align: left;
   }
-  /* #tablet-content .btn {
-    border-radius: 10px;
-    padding: 20px 80px;
-    font-size: var(--Font-size4);
-    font-weight: 700;
-    margin-bottom: 2rem;
-  } */
   #socials-container {
     justify-content: left;
   }
   #socials {
-    width: 190px;
-    height: 60px;
+    width: 160px;
+    height: 48px;
   }
   #partners {
     gap: 1.4rem;
@@ -448,11 +675,10 @@ a {
     padding: 10px 30px;
     border-radius: 25px;
     margin: 0 auto;
-    margin-top: -50px; /* Adjust as needed for overlap effect */
+    margin-top: -50px;
     z-index: 2;
     position: relative; 
   }
-
   #peace-mass {
     height: 50px;
   }
@@ -486,11 +712,6 @@ a {
   .card {
     width: 220px;
   }
-  .card img {
-    width: 80%;
-    height: 80%;
-    margin: 0 auto;
-  }
   #cards-h1 {
     font-size: var(--Font-size3);
     text-align: center;
@@ -501,6 +722,9 @@ a {
   }
   #cards-p span {
     font-weight: 700;
+  }
+  .testimonial-h2{
+    text-align: left;
   }
 }
 
@@ -527,7 +751,7 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: var(--white); /* Optional: for visibility */
+    background: var(--white);
     text-align: center;
     margin: 0 auto;
     position: absolute;
@@ -552,6 +776,10 @@ a {
     font-weight: 700 !important;
     font-size: var(--Font-size3) !important;
     color: var(--Black-3);
+  }
+  .container .logo{
+    width: 100px;
+    height: 50px;
   }
   #tablet {
     display: flex;
@@ -578,7 +806,6 @@ a {
     font-weight: 600;
     line-height: var(--Line-height2);
     text-align: center;
-    /* width: 80%; */
     margin-bottom: 0 !important;
   }
   #tablet-content {
@@ -586,7 +813,7 @@ a {
   }
   #tablet-content .btn {
     border-radius: 10px;
-    padding: 10px 40px;
+    padding: 7px 40px;
     font-size: var(--Font-size2);
     font-weight: 500;
     display: inline-block;
@@ -596,8 +823,8 @@ a {
     justify-content: center;
   }
   #socials {
-    width: 120px;
-    height: 40px;
+    width: 100px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -608,7 +835,7 @@ a {
     padding: 10px 20px;
     border-radius: 5px;
     margin: 0 auto;
-    margin-top: -50px; /* Adjust as needed for overlap effect */
+    margin-top: -50px;
     z-index: 2;
     position: relative; 
   }
@@ -646,8 +873,11 @@ a {
     align-items: center;
   }
   .card {
-    width: 95%;
+    width: 90%;
     padding: 1rem 2rem;
+    box-shadow: none;
+    border: none;
+  
   }
   .card img {
     width: 80%;
@@ -657,303 +887,107 @@ a {
   #cards-h1 {
     font-size: var(--Font-size2);
     text-align: center;
+    margin: 0;
   }
   #cards-p {
     text-align: center;
-    font-size: var(--Font-size3);
+    font-size: var(--Font-size4);
   }
   #cards-p span {
     font-weight: 700;
   }
-}
+  .features {
+      display: flex;
+      flex-direction: column;
+  }
 
-/* img {
-    max-width: 100%;
-    display: block;
-} */
-
-
-.body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    /* color: white; */
-    /* background-color: #f0f2f5;
-    color: #333; */
-
-    /* font-family: Arial, sans-serif; */
-    color: #333;
-
-
-}
-
-.how-it-works {
-    background-color: #1a1a1a;
-    /* Dark background as seen in the image */
-    color: #fff;
-    padding: 40px 20px;
+  .card {
+      align-items: center;
+  }
+  .testimonial-grid {
+  width: 93%;
+  height: fit-content;
+  }
+  .testimonial-h2, .how-it-works-h1 {
+      font-size: var(--Font-size1);
+      font-weight: bolder;
+  }
+  .testimonial-h2{
     text-align: center;
-}
-
-
-h1 {
-    text-align: center;
-    padding: 40px 20px 20px;
-    font-size: 2.5em;
-}
-
-
-h1 span {
-    color: #00bfff;
-}
-
-/* main {
-    background-color: #0a0a0a;
-} */
-
-.features {
-
-    display: flex;
-    /* flex-direction: column; */
-    /* Default to column for mobile */
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-
-    /* display: flex;
-    justify-content: space-between; */
-    /* gap: .5rem; */
-    /* padding: .5rem; */
-    /* background-color: #1a1a1a; */
-    /* color: #ffffff; */
-
-    /* flex-wrap: wrap; */
-
-}
-
-.card2 {
-    background-color: #2b2b2b;
-    /* Slightly lighter dark background for cards */
-    border-radius: .5rem;
-    padding: 1.7rem;
-    width: 90%;
-    /* Adjust width for mobile */
-    /* max-width: 350px; */
-    /* Max width for cards */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
-    text-align: center;
-
-    /* background-color: #1c1c1c; */
-    /* border-radius: .5rem;
-    margin: 1rem;
-    padding: 2rem; */
-    /* text-align: center; */
-    /* width: 300px; */
-}
-
-.card-image {
-    /* display:block; */
-    margin-bottom: .5rem;
-    /* margin-left: 2rem; */
-
-}
-
-.card h3 {
-    padding-bottom: .5rem;
-}
-
-.card p {
-    color: #ccc;
-}
-
-
-p span {
-    color: #00bfff;
-}
-
-.testimonials-section {
-    background-color: #00bfff;
-    /* color: #fff; */
-    /* text-align: center; */
-    padding: 2.5rem 2rem;
-}
-
-h2 {
-    align-items: center;
-    color: #fff;
-    padding-bottom: 2rem;
-
-
-}
-
-
-
-/* .testimonials {
-    display: flex;
-    justify-content: center;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 1rem;
-    justify-content: flex-start;
-} */
-
-/* .testimonial-grid {
-
-     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-     align-items: flex-start; 
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 1rem;
-    max-width: 500px;
-    margin: 1rem;
-    padding: 2rem;
-    gap: 1.5rem; 
-     color: #fff; 
-     border: 1px solid lightblue;
-}  */
-
-
-
-.testimonials {
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    /* Smooth scrolling on iOS */
-    padding-bottom: 1rem;
-    justify-content: flex-start;
-    gap: 2rem;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-    margin: 0 -1.3rem;
-    /* Adjust margin to compensate for padding and keep content centered */
-}
-
-.testimonial-grid {
-    display: flex;
-    align-items: center;
-    flex: 0 0 auto;
-    gap: 1.5rem;
-    /* Prevent cards from shrinking or growing */
-    width: 60%;
-    height: 170px;
-    /* max-width: 350px; */
-    /* background-color: #ffffff; */
-    border-radius: .7rem;
-    padding: 1rem;
-    border: 1px solid lightblue;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.profile {
-    width: 70px;
-    border: 1px solid white;
-    height: 70px;;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-
-.name {
-    font-weight: bold;
-    color: #fff;
-}
-
-span {
-    font-style: italic;
-}
-
-/* .role {
-    font-style: italic;
-    font-weight: bold;
-} */
-
-
-.text {
-    padding-top: .5rem;
-    font-size: 1rem;
-    /* color: #fff; */
-    color: #ffffff;
-    font-size: small;
-    /* line-height: 1rem; */
-    /* padding-top: 3rem; */
-    /* padding-right: 3rem; */
-}
-.testimonial-h2, .how-it-works-h1 {
-    text-align: center;
-    color: var(--white);
-    padding-bottom: 2rem;
-    font-size: var(--Font-size12);
-    font-weight: bolder;
-}
-
-@media(max-width: 600px) {
-    .features {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card {
-        align-items: center;
-    }
-    .testimonial-grid {
-    width: 93%;
-    height: fit-content;
-}
-.testimonial-h2, .how-it-works-h1 {
-    font-size: var(--Font-size1);
-    font-weight: bolder;
-}
-.card2 h3{
-    font-size: var(--Font-size2);
-    font-weight: 700;
-}
-    .card2 p {
-        font-size: var(--Font-size3);
-        font-weight: 500;
-    }
-
-    /* .testimonials {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-       flex-wrap: wrap; 
-    } */
-
-    /* .testimonial-grid {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    } */
-}
-
-
-/* @media (min-width:768px) {
-    .testimonials-container {
-        padding-left: 5%;
-        padding-right: 5%;
-        margin: 0;
-        /* Reset margin from smaller screens */
-    }
-
-    .testimonial-card {
-        /* Adjust width to make them look good horizontally, but still allow scrolling */
+  }
+  .card2 h3{
+      font-size: var(--Font-size2);
+      font-weight: 700;
+  }
+  .card2 p {
+      font-size: var(--Font-size3);
+      font-weight: 500;
+  }
+  .testimonial-card {
         width: 300px;
-        /* Fixed width for consistent scrolling card size */
-        /* No margin-right needed here due to gap property */
-    }
-} */
-/* 
-@media (min-width:1024px) {
-    .testimonials-container {
-        padding-left: 8%;
-        /* More padding for wider screens */
-        padding-right: 8%;
-    }
+  }
+  .top-section {
+    padding: 10px 10px 20px 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .top-section h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-top: 20px;
+  }
+  .top-section p {
+    font-size: 14px;
+  }
+  .download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
 
-    .testimonial-card {
-        width: 350px;
-        /* Slightly wider cards on very large screens */
-    }
+  .bottom-section{
+    padding-top: 20px;
+  }
+  .footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    
+  }
+  .footer-logo img {
+    width: 80px;
+    height: auto;
+  }
+  .footer-logo h2 {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  .footer-links p {
+    font-size: 12px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  .footer-links ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .footer-links ul li {
+    margin-bottom: 0;
+  }
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 10px;
+  }
 }
