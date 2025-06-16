@@ -504,71 +504,59 @@ span {
 .testimonial-h2{
   text-align: center;
 }
-/* Top section (heading, text, buttons) */
 .top-section {
   background: linear-gradient(to right, #7f5af0, #6246ea);
   color: white;
   text-align: center;
   padding: 60px 20px;
-  /* position: relative;
-  overflow: hidden; */
 }
-/* Make the heading bold and large */
 .top-section h1 {
   font-size: var(--Font-size7);
   margin-bottom: 15px;
 }
-
-/* The paragraph under the heading */
 .top-section p {
   font-size: 18px;
   margin-bottom: 30px;
 }
-
-/* Container holding both buttons */
 .download-buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
-
-
-/* Bottom section container */
 .bottom-section {
   background-color: #f2f2f2;
   padding: 50px 20px;
 }
-
 .footer-columns {
     display: flex;
     flex-direction: row !important;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* gap: 40px; */
     width: 80%;
 }
-
-/* Footer logo and name */
 .footer-logo {
-  display: flex;
   align-items: center;
-  margin-left: 100px;
-  
+  margin: 4rem 0 0 5rem;
 }
-
 .footer-logo img {
   width: 170px;
   height: auto;
-  /* vertical-align: middle; */
-  
 }
-
 .footer-logo h2 {
   display: inline-block;
   margin-left: 10px;
   font-size: 24px;
   color: #333;
+}
+.footer-download-buttons a img{
+  margin-top: .5rem;
+  width: 100px;
+  height: 30px;
+}
+.footer-download-buttons a img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 .footer-links p {
   font-size: 18px;
@@ -591,13 +579,11 @@ span {
 .footer-links ul li a:hover {
   color: #000;
 }
-.footer-social a i{
-  font-size: 24px;
-  color: #555;
+.footer-social a img{
   transition: color 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  margin-right: 5px;
+  margin: -5px 5px 0 0;
+  width: 30px;
+  height: 30px;
 }
 .footer-social img {
   width: 107px;
@@ -767,8 +753,9 @@ span {
     color: var(--Black-3);
   }
   .container .logo{
+    margin-top: .5rem;
     width: 100px;
-    height: 50px;
+    height: 45px;
   }
   #tablet {
     display: flex;
@@ -947,8 +934,9 @@ span {
   }
   .footer-logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-left: 0;
+    margin: 2rem .5rem 0 0;
     
   }
   .footer-logo img {
@@ -960,6 +948,13 @@ span {
     margin-left: 10px;
     font-size: 18px;
     color: #333;
+  }
+  .footer-download-buttons a img{
+    width: 40px;
+    height: 15px;
+    margin-top: .2rem;
+    /* margin: 0 auto; */
+
   }
   .footer-links p {
     font-size: 12px;
@@ -978,5 +973,10 @@ span {
     text-decoration: none;
     color: #555;
     font-size: 10px;
+  }
+  .footer-social a img{
+    margin: -13px 5px 0 0;
+    width: 20px;
+    height: 20px;
   }
 }
