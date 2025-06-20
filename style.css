@@ -117,6 +117,9 @@ header nav {
   align-items: center;
   gap: 20px;
 }
+.nav-li{
+  margin-right: 2rem;
+}
 #nav img {
   margin-right: 5px !important;
   /* width: 60px;
@@ -609,6 +612,9 @@ span {
     width: 120px;
     height: 50px;
   }
+  .nav-li{
+    margin-right: 0;
+  }
   .navbar-nav {
     flex-direction: column;
     justify-content: center;
@@ -720,6 +726,9 @@ span {
     margin-right: 5px !important;
     width: 90px;
     height: 37px;
+  }
+   .nav-li{
+    margin-right: 0;
   }
   .collapse.navbar-collapse {
     flex-direction: row;
