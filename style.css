@@ -118,7 +118,10 @@ header nav {
   gap: 20px;
 }
 .nav-li{
-  margin-right: 2rem;
+  margin-right: 5rem;
+}
+.login-link{
+  margin-top: 0;
 }
 #nav img {
   margin-right: 5px !important;
@@ -607,6 +610,9 @@ span {
     padding: 5px 10px;
     font-size: var(--Font-size3);
   }
+  .login-link{
+    margin-top: 1rem;
+  }
   #nav img {
     margin-right: 5px !important;
     width: 120px;
@@ -729,6 +735,9 @@ span {
   }
    .nav-li{
     margin-right: 0;
+  }
+   .login-link{
+    margin-top: 1rem;
   }
   .collapse.navbar-collapse {
     flex-direction: row;
